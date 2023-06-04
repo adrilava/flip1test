@@ -25,7 +25,7 @@ void draw_callback(Canvas* canvas, void* ctx) {
 
     //canvas_draw_box(canvas, ocarina->model->x, ocarina->model->y, 4, 4);
     int timec = 0;
-    while(timec < 100000)
+    while(timec < 10)
     {
         timec++;
         canvas_draw_str(canvas, 50, 40, "value : %d", timec);
