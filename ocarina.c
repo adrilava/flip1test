@@ -24,6 +24,13 @@ void draw_callback(Canvas* canvas, void* ctx) {
     furi_check(furi_mutex_acquire(ocarina->model_mutex, FuriWaitForever) == FuriStatusOk);
 
     //canvas_draw_box(canvas, ocarina->model->x, ocarina->model->y, 4, 4);
+    int time = 0
+    while(time < 100000)
+    {
+        time++
+        canvas_draw_str(canvas, 50, 40, "value : %d", time);
+    }
+    
     canvas_draw_frame(canvas, 0, 0, 128, 64);
     canvas_draw_str(canvas, 50, 10, "Ocarina");
     canvas_draw_str(canvas, 30, 20, "OK button for A");
