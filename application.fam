@@ -1,6 +1,6 @@
 App(
     appid="Ocarina",
-    name="Ocarinaa",
+    name="Only_testing_to_create_app_sorry",
     apptype=FlipperAppType.EXTERNAL,
     entry_point="ocarina_app",
     cdefines=["APP_OCARINA"],
