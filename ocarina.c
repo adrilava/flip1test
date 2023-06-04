@@ -3,6 +3,7 @@
 #include <gui/gui.h>
 #include <input/input.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 #define NOTE_UP 587.33f
 #define NOTE_LEFT 98.0f
