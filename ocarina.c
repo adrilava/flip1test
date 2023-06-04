@@ -35,7 +35,7 @@ void draw_callback(Canvas* canvas, void* ctx) {
     canvas_draw_frame(canvas, 0, 0, 128, 64);
     char text[20];
     sprintf(text, "Ocarina %d", timec);
-    canvas_draw_str(canvas, 50, 10, text);
+    canvas_draw_str(canvas, 30, 40, text);
     canvas_draw_str(canvas, 50, 10, "Ocarina");
     canvas_draw_str(canvas, 30, 20, "OK button for A");
 
