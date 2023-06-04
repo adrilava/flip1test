@@ -32,7 +32,7 @@ void draw_callback(Canvas* canvas, void* ctx) {
     }
     
     canvas_draw_frame(canvas, 0, 0, 128, 64);
-    canvas_draw_str(canvas, 50, 10, "Ocarina");
+    canvas_draw_str(canvas, 50, 10, "Ocarina %d", timec);
     canvas_draw_str(canvas, 30, 20, "OK button for A");
 
     furi_mutex_release(ocarina->model_mutex);
