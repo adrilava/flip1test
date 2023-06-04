@@ -40,6 +40,7 @@ static void render_callback(Canvas* const canvas, void* ctx) {
             canvas, 64, 28, AlignCenter, AlignTop, "Light is fucking on!");
         elements_multiline_text_aligned(
             canvas, 64, 40, AlignCenter, AlignTop, "Press OK button to off");
+        elements_multiline_text_aligned(canvas, 64, 52, AlignCenter, AlignTop, "marine le peigne");
     }
 
     furi_mutex_release(plugin_state->mutex);
