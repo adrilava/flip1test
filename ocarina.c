@@ -25,10 +25,10 @@ void draw_callback(Canvas* canvas, void* ctx) {
 
     //canvas_draw_box(canvas, ocarina->model->x, ocarina->model->y, 4, 4);
     int timec = 0;
-    while(timec < 10)
+    while(timec < 100)
     {
         timec++;
-        canvas_draw_str(canvas, 50, 40, "value : %d", timec);
+        canvas_draw_str(canvas, 50, 40, "value");
     }
     
     canvas_draw_frame(canvas, 0, 0, 128, 64);
