@@ -4,11 +4,11 @@
 #include <input/input.h>
 #include <stdlib.h>
 
-#define NOTE_UP 587.33
-#define NOTE_LEFT 98.0
-#define NOTE_RIGHT 349.23
+#define NOTE_UP 587.33f
+#define NOTE_LEFT 98.0f
+#define NOTE_RIGHT 440.00f
 #define NOTE_DOWN 349.23
-#define NOTE_OK 293.66
+#define NOTE_OK 293.66f
 
 typedef struct {
     FuriMutex* model_mutex;
