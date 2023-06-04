@@ -1,9 +1,9 @@
 App(
-    appid="flashlight",
-    name="[GPIO] Flashlight",
+    appid="bluetoothToFM",
+    name="[GPIO] BluetoothToFM",
     apptype=FlipperAppType.EXTERNAL,
-    entry_point="flashlight_app",
-    cdefines=["APP_FLASHLIGHT"],
+    entry_point="bluetoothToFM_app",
+    cdefines=["APP_BLUETOOTH_TO_FM"],
     requires=[
         "gui",
     ],
