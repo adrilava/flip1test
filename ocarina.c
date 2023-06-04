@@ -3,7 +3,7 @@
 #include <gui/gui.h>
 #include <input/input.h>
 #include <stdlib.h>
-#include <stdio.h>
+
 
 #define NOTE_UP 587.33f
 #define NOTE_LEFT 98.0f
@@ -25,17 +25,6 @@ void draw_callback(Canvas* canvas, void* ctx) {
     furi_check(furi_mutex_acquire(ocarina->model_mutex, FuriWaitForever) == FuriStatusOk);
 
     //canvas_draw_box(canvas, ocarina->model->x, ocarina->model->y, 4, 4);
-    int timec = 0;
-    while(timec < 100)
-    {
-        timec++;
-        canvas_draw_str(canvas, 50, 40, "value");
-    }
-    
-    canvas_draw_frame(canvas, 0, 0, 128, 64);
-    char text[20];
-    sprintf(text, "Ocarina %d", timec);
-    canvas_draw_str(canvas, 30, 40, text);
     canvas_draw_str(canvas, 50, 10, "Ocarina");
     canvas_draw_str(canvas, 30, 20, "OKKKK button for A");
 
